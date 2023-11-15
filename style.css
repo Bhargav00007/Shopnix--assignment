@@ -120,6 +120,7 @@
             }
             button:hover{
                 background-color: skyblue;
+                box-shadow:0 20px 35px rgba(0, 0, 0, 0.5);
             }
             .next{
                 position: relative;
@@ -128,4 +129,16 @@
                 border-radius: 0px;
                 background: lightblue;
                 width: 120px;
+                box-shadow:0 20px 35px rgba(0, 0, 0, 0);
+            }
+            .product1{
+                /* display:flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                position: relative;
+                left:250px;
+                padding:50px;
+                width:1000px;
+                height:500px;
+                border:1px solid black;
             }
