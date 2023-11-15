@@ -57,48 +57,39 @@
         font-weight: bolder;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .item{
-        width:2000px;
-        height:300px;
-    }
-    .product{
-        margin-top: 5%;
-    }
-    
-    .row{                
-        display:flex;
-        margin-top: 5em;
+    .row{               
+        margin-top: 5vmin;
     }
 
     .fig{
         width:fit-content;
         text-align: center;
-        margin: 0 2.5%;
     }
     .figg{
-        border-radius: 20px;
+        border-radius: 2.3vmin;
         border: 1px solid;  
     }
-    .product{
-        /* width:100%;
-        height:100%;
-        margin-bottom: 100px; */
+
+    .button{
+        position:relative;
+        background: orange;
+        border: 1px solid black;
+        border-radius: 2em;
+        font-size: 1.7em;
+        bottom:4.2em;
+        padding:0.24em 2.7em;
+    }
+    .button:hover{
+        background-color: skyblue;
+        box-shadow:0 1em 0.7em rgba(0, 0, 0, 0.5);
     }
     
+
+
+
+
+
+
 
     .figg:hover {
     box-shadow:0 20px 35px rgba(0, 0, 0, 0.7);
@@ -109,20 +100,7 @@
         font-family:sans-serif;
         font-size: larger;
     }
-    .button{
-        position:relative;
-        background: orange;
-        border: 1px solid black;
-        border-radius: 30px;
-        width:300px;
-        height:50px;
-        font-size: 18px;
-        bottom:100px;
-    }
-    .button:hover{
-        background-color: skyblue;
-        box-shadow:0 20px 35px rgba(0, 0, 0, 0.5);
-    }
+  
     .next{
         border-radius: 0px;
         background: lightblue;
@@ -138,3 +116,15 @@
             font-size: 2vh;
         }
     }
+
+    @media screen and (max-width:500) {
+        .button{
+            position: relative;
+            bottom:4vh;
+        }
+        #bar{
+            transform:scale(0);
+            background: yellow;
+        }
+    }
+    
