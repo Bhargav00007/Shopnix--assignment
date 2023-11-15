@@ -46,7 +46,7 @@
             </div>
         </div>
             <div class="row justify-content-end p-4">
-            <button type="submit" class="col col-lg-1 col-sm-2 col-md-2 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
+            <button class="col col-lg-1 col-sm-2 col-md-2 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
             </div>
         
     </div>
@@ -79,7 +79,7 @@
         </div>
 
         <div class="row justify-content-end p-4">
-            <button type="submit" class="col col-lg-2 btn next btn-info" onclick="document.getElementById('product2').scrollIntoView();">NEXT</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" onclick="document.getElementById('product2').scrollIntoView();">NEXT</button>
         </div>
         
 
@@ -110,8 +110,8 @@
         </div>
 
         <div class="row justify-content-end">
-            <button type="submit" class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product1').scrollIntoView();">BACK</button>
-            <button type="submit" class="btn btn-info next col m-2 col-lg-3 col-md-3" onclick="document.getElementById('product3').scrollIntoView();">NEXT</button>
+            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product1').scrollIntoView();">BACK</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" onclick="document.getElementById('product3').scrollIntoView();">NEXT</button>
         </div>
 
         
@@ -152,8 +152,8 @@
 
        
          <div class="row justify-content-end">
-            <button type="submit" class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product2').scrollIntoView();">BACK</button>
-            <button type="submit" class="btn btn-info next col m-2 col-lg-3 col-md-3">NEXT</button>
+            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product2').scrollIntoView();">BACK</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3">NEXT</button>
         </div>
 
     </form>
@@ -161,8 +161,9 @@
 
             
     <div class="col product1 m-3">
-        <div class="container"> 
-            hwheheheh
+        <div class="container justify-content-center align-items-center"> 
+            <img src="headphones.png" class="row p-2" style="height: 45em; width: 45em;">
+            <figcaption class="row justify-content-center">Headphones with surround-sound and Bluetooth 5.0</figcaption>
         </div>
     </div>
 
@@ -171,5 +172,46 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        //To create shadow on the themes
+        document.querySelectorAll(".figg").forEach(element=>{
+            element.parentElement.addEventListener("mouseover", function(){
+                element.style.boxShadow = "0 20px 35px rgba(0, 0, 0, 0.7)";
+
+            }) 
+            element.parentElement.addEventListener("mouseleave", function(){
+                element.style.boxShadow = "0 20px 35px rgba(0, 0, 0, 0.0)";
+
+            }) 
+            })
+      
+
+            //to TICK the applied theme           
+
+
+            let themes = document.querySelectorAll(".button");
+            //default selected first theme
+            themes[0].innerHTML="&#10004;"
+            themes[0].style.color="white"
+            themes[0].style.backgroundColor="crimson"
+
+            themes.forEach(button=>{
+                button.addEventListener("click",()=>{
+                    themes.forEach(defaulting=>{
+                        defaulting.innerHTML= "Apply"
+                        defaulting.style.color="black"
+                        defaulting.style.backgroundColor="orange"
+                    })
+                    button.innerHTML="&#10004;"
+                    button.style.color="white"
+                    button.style.backgroundColor="crimson"
+                })
+            })
+
+    </script>
+
+
+
 </body>
 </html>
