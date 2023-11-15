@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shopnix</title>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Shopnix</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
@@ -11,15 +12,15 @@
 
     <header class="container">
         <nav class="row">
-            <div class="col logo col-lg-3 col-md-2">Shopnix</div>
+            <div class="col logo col-lg-3 col-md-2 col-sm-3">Shopnix</div>
 
-            <div class="col menu col-lg-6 col-md-7">
+            <div class="col menu col-lg-6 col-md-7 col-sm-6">
                 <a class="col" href="">Home</a> <a class="col" href="">Features</a>
                 <a class="col" href="">Pricing</a> <a class="col" href="">Themes</a>
                 <a class="col" href="">FAQ</a>
             </div>
 
-            <div class="col register col-lg-2 col-md-2 justify-content-end offset-1" ><a href="">Register</a></div>
+            <div class="col register col-lg-2 col-md-2 col-sm-3 justify-content-end offset-1" ><a href="">Register</a></div>
         </nav>
         <hr>
     </header>
@@ -27,36 +28,29 @@
 
     <div class="product container">
         <div class="row justify-content-center">
-            <div class="fig col col-lg-1">
+            <div class="fig col col-lg-1 col-sm-4">
                 <img class="figg" src="bag_edited.jpg" style="width:20em; height:26.25em">                    
                 <figcaption>Bags Theme</figcaption>
                 <button type="submit" class="button">Apply</button>
             </div>
             
-            <div class="fig col col-lg-1">
+            <div class="fig col col-lg-1 col-sm-4">
                 <img class="figg" src="flex_edited.jpg" style="width:20em; height:26.25em">                    
                 <figcaption>Flex Theme</figcaption>
                 <button type="submit" class="button">Apply</button>
             </div> 
 
-            <div class="fig col col-lg-1">
+            <div class="fig col col-lg-1 col-sm-4 col">
                 <img class="figg" src="chic_edited.jpg" style="width:20em; height:26.25em">                    
                 <figcaption>Chic theme</figcaption>
                 <button type="submit" class="button">Apply</button>
             </div>
         </div>
-            <div class="row justify-content-end p-4">
+            <div class="row justify-content-end">
             <button class="col col-lg-1 col-sm-2 col-md-2 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
             </div>
         
     </div>
-
-
-
-    
-
-
-
 
     <div class="row">
         <div class="col m-3">
@@ -79,7 +73,7 @@
         </div>
 
         <div class="row justify-content-end p-4">
-            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" onclick="document.getElementById('product2').scrollIntoView();">NEXT</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3 col-sm-6" onclick="document.getElementById('product2').scrollIntoView();">NEXT</button>
         </div>
         
 
@@ -162,8 +156,8 @@
             
     <div class="col product1 m-3">
         <div class="container justify-content-center align-items-center"> 
-            <img src="headphones.png" class="row p-2" style="height: 45em; width: 45em;">
-            <figcaption class="row justify-content-center">Headphones with surround-sound and Bluetooth 5.0</figcaption>
+            <img src="headphones.png" class="row prodimg" style="height: 40em; width: 40em;">
+            <figcaption class="row justify-content-center prodcaption">Headphones with surround-sound and Bluetooth 5.0</figcaption>
         </div>
     </div>
 
@@ -208,7 +202,6 @@
                     button.style.backgroundColor="crimson"
                 })
             })
-
     </script>
 
 
