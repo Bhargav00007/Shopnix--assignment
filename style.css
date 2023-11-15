@@ -91,6 +91,7 @@
 
 .next{
         background: lightblue;
+        font-size: 1.4em;
         box-shadow:0 1em 2em rgba(0, 0, 0, 0);
     }
     .product1{
@@ -103,20 +104,52 @@
         height: 60em;
     }
 
-    @media screen and (max-width: 1300px) {
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width: 1200px) {
         body{
             font-size: 2vh;
         }
     }
 
-    @media screen and (max-width:500) {
-        .button{
-            position: relative;
-            bottom:4vh;
-        }
-        #bar{
-            transform:scale(0);
-            background: yellow;
+    @media screen and (max-width: 900px) {
+        body{
+            font-size: 1.8vh;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        body{
+            font-size: 1.6vh;
+        }
+        .prodimg{
+            height: 35em;
+            width: 35em;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        body{
+            font-size: 1.3vh;
+        }
+
+        .prodcaption{
+            font-size: 1.2em;
+        }
+    }
+
+    @media screen and (max-width:530px) {
+     
+        .menu{
+            transform:scale(0);
+        }
+        .prodimg{
+            height: 20%;
+            width: 20%;
+        }
+    }
+
+
+  
+
     
