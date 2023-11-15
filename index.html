@@ -10,17 +10,15 @@
 
     <header class="container">
         <nav class="row">
-            <div class="col logo col-lg-3.9">Shopnix</div>
+            <div class="col logo col-lg-3 col-md-2">Shopnix</div>
 
-            <div class="col menu col-lg-7">
-                <a class="col justify-content-between" href="">Home</a>
-                <a class="col justify-content-between" href="">Features</a>
-                <a class="col justify-content-between" href="">Pricing</a>
-                <a class="col justify-content-between" href="">Themes</a>
-                <a class="col justify-content-between" href="">FAQ</a>
+            <div class="col menu col-lg-6 col-md-7">
+                <a class="col" href="">Home</a> <a class="col" href="">Features</a>
+                <a class="col" href="">Pricing</a> <a class="col" href="">Themes</a>
+                <a class="col" href="">FAQ</a>
             </div>
 
-            <div class="col register col-lg-2" ><a href="">Register</a></div>
+            <div class="col register col-lg-2 col-md-2 justify-content-end offset-1" ><a href="">Register</a></div>
         </nav>
         <hr>
     </header>
@@ -47,7 +45,7 @@
             </div>
         </div>
             <div class="row justify-content-end p-4">
-            <button type="submit" class="btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
+            <button type="submit" class="col col-lg-1 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
             </div>
         
     </div>
@@ -55,6 +53,10 @@
 
 
     
+
+
+
+
     
     <form class="container product1 p-5 text-container" id="product1">
         <h1>Add a type, Category and Sub-category</h1>
@@ -74,35 +76,84 @@
         <input type="text" placeholder="eg = Medical books">
         </div>
 
+        <div class="row justify-content-end p-4">
+            <button type="submit" class="col col-lg-1 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
+            </div>
+        
 
-        <section class="product1">
-            <h1>Add your first product</h1>
-            <h2>Basic details</h2>
+
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+        <h1>Add your first product</h1>
+
+       <h2>Basic details</h2>
+
+        <div class="row">
             <h3>Product description</h3>
             <input type="text" placeholder="eg = economy books">
+        </div>
+
+        <div class="row">
             <h3>Insert Image(s)</h3>
             <input type="text" placeholder="eg = Image">
+        </div>
+
+        <div class="row">
             <h3>Insert SKU code</h3>
             <input type="text" placeholder="eg = Prod00007">
-        </section>
-        <button type="submit" class="next">NEXT</button>
-        <button type="submit" class="next">BACK</button>
-        <section class="product1">
+        </div>
+
+        <div class="row justify-content-end">
+            <button type="submit" class="btn btn-info  next col  m-2 col-lg-3 col-md-3">BACK</button>
+            <button type="submit" class="btn btn-info next col m-2 col-lg-3 col-md-3">NEXT</button>
+        </div>
+
+        
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+  
             <h1>Pricing Details</h1>
             <h2>Basic details</h2>
-            <h3>Net price</h3>
-            <input type="int" placeholder="eg = 80">
-            <h3>List Price</h3>
-            <input type="int" placeholder="eg = 100">
-            <h3>Discount percentage</h3>
-            <input type="int" placeholder="eg = 40">
-            <h3>Shipping charges (if any)</h3>
-            <input type="int" placeholder="eg = 40">
-            <h3>Stock Level</h3>
-            <input type="int" placeholder="eg = 110">
-        </section>
-        <button type="submit" class="next">NEXT</button>
-        <button type="submit" class="next">BACK</button>
+
+            <div class="row">
+                <h3>Net price</h3>
+                <input type="int" placeholder="eg = 80">
+            </div>
+
+            <div class="row">
+                <h3>List Price</h3>
+                <input type="int" placeholder="eg = 100">
+            </div>
+
+            <div class="row">
+                <h3>Discount percentage</h3>
+                <input type="int" placeholder="eg = 40">
+            </div>
+
+            <div class="row">
+                <h3>Shipping charges (if any)</h3>
+                <input type="int" placeholder="eg = 40">
+            </div>
+
+            <div class="row">
+                <h3>Stock Level</h3>
+                <input type="int" placeholder="eg = 110">
+            </div>
+
+       
+         <div class="row justify-content-end">
+            <button type="submit" class="btn btn-info  next col  m-2 col-lg-3 col-md-3">BACK</button>
+            <button type="submit" class="btn btn-info next col m-2 col-lg-3 col-md-3">NEXT</button>
+        </div>
+
     </form>
 
 
