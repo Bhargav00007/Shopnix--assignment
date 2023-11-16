@@ -12,4 +12,6 @@ Creating a interactive website for Shopnix.
 
 5.Jquery
 
+# Website link
+https://bhargav00007.github.io/Shopnix--assignment/
 
