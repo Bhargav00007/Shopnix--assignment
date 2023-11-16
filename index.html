@@ -20,14 +20,14 @@
                 <a class="col" href="">FAQ</a>
             </div>
 
-            <div class="col register col-lg-2 col-md-2 col-sm-3 justify-content-end offset-1" ><a href="">Register</a></div>
+            <div class="col register col-lg-2 col-md-2 col-sm-3 justify-content-end offset-1" ><a href="javascript:introJs().setOption('showProgress',true).start();">Register</a></div>
         </nav>
         <hr>
     </header>
 
 
     <div class="product container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center data-step="1" data-intro="Choose any one theme"">
             <div class="fig col col-lg-1 col-sm-4">
                 <img class="figg" src="bag_edited.jpg" style="width:20em; height:26.25em">                    
                 <figcaption>Bags Theme</figcaption>
@@ -47,7 +47,7 @@
             </div>
         </div>
             <div class="row justify-content-end">
-            <button class="col col-lg-1 col-sm-2 col-md-2 btn next btn-info" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
+            <button class="col col-lg-1 col-sm-2 col-md-2 btn next btn-info" type="button" onclick="document.getElementById('product1').scrollIntoView();">NEXT</button>
             </div>
         
     </div>
@@ -55,7 +55,7 @@
     <div class="row">
         <div class="col m-3">
     <form class="container product1 p-5 text-container" id="product1">
-        <h1>Add a type, Category and Sub-category</h1>
+        <h1 data-step="2" data-intro="Choose product">Add a type, Category and Sub-category</h1>
 
         <div class="row col-lg-7">
             <h3>Add a product type</h3>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="row justify-content-end p-4">
-            <button class="btn btn-info next col m-2 col-lg-3 col-md-3 col-sm-6" onclick="scrollToProduct2()">NEXT</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3 " type="button" onclick="document.querySelector('form .product2').scrollIntoView();">NEXT</button>
         </div>
         
 
@@ -83,8 +83,8 @@
 <br>
 <br>
 <br>
-
-        <h1 id="product2">Add your first product</h1>
+<div class="product2" id="product2">
+        <h1>Add your first product</h1>
 
        <h2>Basic details</h2>
 
@@ -109,10 +109,10 @@
         </div>
 
         <div class="row justify-content-end">
-            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product1').scrollIntoView();">BACK</button>
-            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" onclick="document.getElementById('product3').scrollIntoView();">NEXT</button>
+            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" type="button" onclick="document.getElementById('product1').scrollIntoView();">BACK</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" type="button" onclick="document.getElementById('product3').scrollIntoView();">NEXT</button>
         </div>
-
+    </div>
         
 <hr>
 <br>
@@ -151,8 +151,8 @@
 
        
          <div class="row justify-content-end">
-            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" onclick="document.getElementById('product2').scrollIntoView();">BACK</button>
-            <button class="btn btn-info next col m-2 col-lg-3 col-md-3">NEXT</button>
+            <button class="btn btn-info  next col  m-2 col-lg-3 col-md-3" type="button" onclick="document.getElementById('product2').scrollIntoView();">BACK</button>
+            <button class="btn btn-info next col m-2 col-lg-3 col-md-3" type="button" onclick="document.getElementById('product3').scrollIntoView();">NEXT</button>
         </div>
 
     </form>
@@ -212,17 +212,7 @@
                 })
             })
     </script>
-    <script>
-        function scrollToProduct2() {
-            var product2Element = document.getElementById('product2');
-            if (product2Element) {
-                product2Element.scrollIntoView();
-            } else {
-                console.error("Element with ID 'product2' not found");
-            }
-        }
-        </script>
-
+     
 
 </body>
 </html>
