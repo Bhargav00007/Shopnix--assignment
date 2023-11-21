@@ -15,3 +15,6 @@ Creating a interactive website for Shopnix.
 # Website link
 https://bhargav00007.github.io/Shopnix--assignment/
 
+# About Website
+This Website is a demo.
+You can add your product details,prices,discounted prices etc.
